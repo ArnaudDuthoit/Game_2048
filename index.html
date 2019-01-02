@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    
+</head>
+
+
+<body>
+
+
+<h1>Le jeu 2048</h1>
+
+<!-- Victory Screen -->
+
+<div id="simpleModal" class="modal">
+    <div class="modal-content">
+
+        <div class="modal-body">
+            <p>Partie Terminée !</p>
+            <p> Ton score est de : </p>
+            <p id="score2"></p>
+        </div>
+        <div class="modal-footer">
+            <div class="closeBtn" onclick="closeModal()">Nouvelle Partie</div>
+        </div>
+    </div>
+</div>
+
+
+<p id="score"></p>
+
+<div id="canvas-block">
+    <canvas id="canvas" width="500" height="500"></canvas>
+</div>
+
+
+<div class="landscape"></div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
